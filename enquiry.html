@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry Form - Ratlou Retail Store</title>
+    <meta name="description" content="Make an enquiry or place an order with Ratlou Retail Store. Fill the form and we'll get back to you.">
+    <meta name="keywords" content="Ratlou Retail enquiry, order, contact, clothing enquiry">
+    <link rel="canonical" href="https://ST10491339.github.io/ratlou-retail/enquiry.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="JS/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+        <img src="images/Ratlou Retail Store.png" alt="Ratlou logo" width="400" class="logo">
+    </div>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About Us</a>
+            <a href="Merchandise.html">Merchandise</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+         <a href="Thankyou.html">Thank you</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Make an Enquiry / Order</h2>
+<form action="Thankyou.html" method="get" data-form="enquiry" aria-describedby="enquiry-desc" novalidate>
+
+  <p id="enquiry-desc" class="visually-hidden">Use this form to send product enquiries or place an order. Required fields are marked.</p>
+
+  <label for="name">First Name:</label>
+  <input type="text" id="name" name="name" placeholder="e.g Hloni" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="e.g lehlo747@gmail.com" required>
+
+  <label for="phone">Phone (optional):</label>
+  <input type="tel" id="phone" name="phone" placeholder="+27 78 766 4031">
+
+  <label for="product-select">Product (optional):</label>
+  <select id="product-select" name="product">
+    <option value="">Select a product...</option>
+    <option value="Casual T-shirt">Casual T-shirt</option>
+    <option value="Stylish Hoodie">Stylish Hoodie</option>
+    <option value="Classic Sneakers">Classic Sneakers</option>
+    <option value="Suit">Suit</option>
+  </select>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea>
+
+  <button type="submit" name="Enquiry" value="Enquiry">Send Enquiry</button>
+  <p class="muted">Or: <button type="submit" name="product" value="Product">Place Order</button></p>
+</form>
+
+        </section>
+    </main>
+<footer>
+  <p>© 2024 Ratlou Retail Store | Time: <span id="clock"></span></p>
+
+  <!-- Social Media Section -->
+<section class="social-share">
+    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+        <img src="images/image.png" alt="Share on Facebook">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <img src="images/instagram.jpg" alt="Share on Instagram">
+    </a>
+</section>
+</footer>
+
+</body>
+</html>
