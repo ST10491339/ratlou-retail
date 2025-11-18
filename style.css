@@ -1,0 +1,498 @@
+/* =============================
+   CSS Reset
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================
+   Base Styles
+============================= */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: burlywood;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: brown;
+}
+
+h3 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+/* Paragraphs and Labels */
+p, label {
+    margin-bottom: 1rem;
+    color: orange;
+}
+
+p {
+    color: green;
+    border-radius: 50px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* =============================
+   Header
+============================= */
+header {
+    background-color: #333;
+    color: blue;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header img.logo {
+    max-width: 100%;
+    border-radius: 12px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* =============================
+   Navigation
+============================= */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: blue;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* =============================
+   Main Section
+============================= */
+main {
+    padding: 2rem;
+}
+
+/* =============================
+   Hero Section
+============================= */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: grey;
+    border-radius: 30px;
+    border: 2px solid blue;
+    padding: 1rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+/* =============================
+   Product Grid
+============================= */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.product-card {
+    background-color: grey;
+    border: 1px solid lime;
+    border-radius: 5px;
+    padding: 1rem;
+     width: 230px; /* equal width for all */
+    height: 360px; /* equal height for all */
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 130px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Buy Now Button --- */
+.buy-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* =============================
+   Forms
+============================= */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: yellow;
+    color: black;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    background-color: lightgreen;
+}
+
+/* =============================
+   About Page Boxes
+============================= */
+.box {
+    background: grey;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.box h2 {
+    color: yellow;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: purple;
+}
+
+/* =============================
+   Pseudo-Classes Section (for marks)
+============================= */
+
+/* Change color when user hovers over paragraph */
+p:hover {
+    color: darkgreen;
+    background-color: lightyellow;
+}
+
+/* Change input border when focused */
+input:focus, textarea:focus {
+    border: 2px solid blue;
+    background-color: #fff8dc;
+}
+
+/* Change button style when clicked */
+button:active {
+    transform: scale(0.97);
+    background-color: #004080;
+}
+
+/* Style the first product card differently */
+.product-card:first-child {
+    border: 2px solid red;
+}
+
+/* Alternate color for list items */
+li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}
+
+/* Part3 additions */
+.product-search {
+  max-width: 900px;
+  margin: 1rem auto;
+  display:flex;
+  gap:8px;
+  justify-content:center;
+}
+.product-search input[type="search"] { padding:10px; min-width:220px; border-radius:6px; }
+.product-search select { padding:10px; border-radius:6px; }
+
+/* lightbox modal */
+#lightbox-modal { display:none; position:fixed; inset:0; z-index:2000; }
+#lightbox-modal .lb-overlay { display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.8); height:100vh; outline:none; }
+#lightbox-modal .lb-content { position:relative; max-width:90%; max-height:90%; padding:10px; }
+#lightbox-modal img { max-width:100%; max-height:80vh; display:block; margin:0 auto; border-radius:6px; }
+#lightbox-modal .lb-close { position:absolute; top:10px; right:10px; background:transparent; border:none; font-size:28px; color:#fff; cursor:pointer; }
+
+/* form error messages */
+.field-error { color:#800; font-size:0.95rem; margin-top:6px; }
+
+/* accordion */
+.accordion .accordion-item { border:1px solid #ddd; border-radius:8px; margin-bottom:8px; overflow:hidden; }
+.accordion .accordion-head { width:100%; text-align:left; padding:10px 14px; background:#f7f7f7; border:none; cursor:pointer; font-weight:700; }
+.accordion .accordion-panel { padding:10px 14px; background:white; transition:max-height 0.25s ease; }
+
+/* --- Accordion visibility and design fix --- */
+.accordion {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #8B5E3C;
+  background-color: #FFF8E7; /* cream tone for visibility */
+}
+
+/* Header buttons */
+.accordion-head {
+  background-color: #8B5E3C; /* brown header */
+  color: black; /* visible text */
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.accordion-head:hover {
+  background-color: #A47148; /* lighter brown when hovered */
+}
+
+/* The hidden/visible panel content */
+.accordion-panel {
+  background-color: #161410; /* cream color background */
+  color: #004400; /* dark green text for contrast */
+  padding: 12px;
+  border-top: 1px solid #8B5E3C;
+}
+/* small styling for submission details on thankyou page */
+#submission-details { margin-top: 12px; }
+#submission-content ul { list-style: none; padding-left: 0; }
+#submission-content li { margin-bottom: 6px; color: #004400; }
+
+#lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.lb-content {
+  position: relative;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.lb-image {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.lb-controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lb-controls button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.lb-controls button:hover {
+  background: #ddd;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Social Media Share Buttons */
+.social-share {
+    display: flex;
+    gap: 15px; /* Space between the icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.social-icon {
+    width: 50px; /* Size of the icon container */
+    height: 50px; /* Size of the icon container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Make the container round */
+    background-color: #f1f1f1; /* Light gray background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.social-icon img {
+    width: 30px; /* Icon size */
+    height: 30px; /* Icon size */
+}
+
+/* Optional: Adjust size on smaller screens */
+@media (max-width: 768px) {
+    .social-share {
+        gap: 10px; /* Reduced space between icons on smaller screens */
+    }
+
+    .social-icon {
+        width: 40px; /* Smaller icon container */
+        height: 40px; /* Smaller icon container */
+    }
+
+    .social-icon img {
+        width: 24px; /* Smaller icons */
+        height: 24px; /* Smaller icons */
+    }
+}
+
